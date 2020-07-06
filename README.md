@@ -1,5 +1,5 @@
 # Coronary-Heart-Disease
-Predicting Coronary Heart Disease based on various attributes like alchohol consumption, family history of heart disease etc
+Predicting Coronary Heart Disease based on various attributes like alcohol consumption, family history of heart disease etc
 
 # Index
 
