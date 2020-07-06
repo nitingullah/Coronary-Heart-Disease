@@ -16,7 +16,7 @@ Predicting Coronary Heart Disease based on various attributes like alcohol consu
 
 # INTRODUCTION
 
- In 2008, heart disease and stroke were responsible for nearly 30.4% in united states. Coronary heart disease is the cause of more than 2/3 of these deaths.
+ In 2008, heart disease and stroke were responsible for 30.4% of deaths in the United States. Coronary heart disease is the cause of more than 2/3 of these deaths.
  Coronary artery disease develops when the major blood vessels that supply your heart with blood, oxygen and nutrients (coronary arteries) become damaged or diseased.
  CSD is affected by many factors such as blood pressure, anxiety, cholesterol, diabetes, obesity, smoking , alcohol consumption , lack of physical activities etc.
  
