@@ -2,7 +2,7 @@
 /*Importing File*/
 
  PROC IMPORT OUT= WORK.chd1
-            DATAFILE= "C:\Users\aysha\Documents\Daily Schedule\652\Project\bigml_5a9b2947eba31d3b440003a5.csv"
+            DATAFILE= "C:\Users\ngullah\Documents\Daily Schedule\652\Project\bigml_5a9b2947eba31d3b440003a5.csv"
             DBMS=CSV REPLACE;
      GETNAMES=YES;
      DATAROW=2;
