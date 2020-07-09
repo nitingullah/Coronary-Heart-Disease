@@ -95,7 +95,7 @@ proc sgplot data=chd;
 run;
 
 
-/* High correclations
+/* High correlations
 Obesity-Adiposity
 ldl-adiposity typea
 adiposity- ldl age
@@ -110,6 +110,7 @@ run;
 proc princomp data=chd1 out=chd_pca;
 var sbp	tobacco	ldl	adiposity typea	obesity	alcohol	age	chd;
 run;
+
 /*Dividing into test and train */
 PROC SURVEYSELECT DATA=chd1 outall OUT=all METHOD=srs SAMPRATE=0.3;
 
@@ -161,7 +162,4 @@ run;
 		Target chd/ level=nominal;
 		input sbp tobacco ldl adiposity typea obesity alcohol age / level = nominal;
 		run;
-
-
-
 
