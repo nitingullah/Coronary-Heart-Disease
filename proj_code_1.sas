@@ -147,19 +147,17 @@ run;
 
 /*Logistic regression with PCA*/
 
-
-      proc logistic data=Chd_pca_train;
-        model chd(event="1") = Prin1 Prin2 Prin3 Prin4/ outroc=troc;
-        score data=chd_pca_test out=valpred outroc=vroc;
-        roc; roccontrast;
-        run;
+proc logistic data=Chd_pca_train;
+	model chd(event="1") = Prin1 Prin2 Prin3 Prin4/ outroc=troc;
+	score data=chd_pca_test out=valpred outroc=vroc;
+	roc; roccontrast;
+	run;
 
 
 /*Random Forest Algorithm*/
 
-
-		Proc HPFOREST data=chd1;
-		Target chd/ level=nominal;
-		input sbp tobacco ldl adiposity typea obesity alcohol age / level = nominal;
-		run;
+Proc HPFOREST data=chd1;
+	Target chd/ level=nominal;
+	input sbp tobacco ldl adiposity typea obesity alcohol age / level = nominal;
+	run;
 
